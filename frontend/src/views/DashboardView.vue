@@ -145,7 +145,7 @@
 import { ref, computed } from 'vue';
 import { useDashboardStore } from '../stores/dashboard';
 import { formatCurrency, formatDate, formatTime } from '../utils/format';
-import { TrendingUp, Wallet, Activity, BarChart3 } from '@heroicons/vue/24/solid';
+import { ArrowTrendingUpIcon, Bars3Icon, ChartBarIcon, Cog6ToothIcon, WalletIcon } from '@heroicons/vue/24/solid/esm/index.js';
 
 const dashboardStore = useDashboardStore();
 
@@ -178,13 +178,13 @@ const stats = computed(() => {
       value: current.total || 0,
       unit: 'USD',
       delta: delta ? (delta > 0 ? `+${delta}% vs prior` : `${delta}% vs prior`) : undefined,
-      icon: Wallet,
+      icon: Bars3Icon,
     },
     {
       key: 'transactions',
       label: 'Transactions',
       value: current.count || 0,
-      icon: BarChart3,
+      icon: ChartBarIcon,
       delta: undefined,
     },
     {
@@ -193,13 +193,13 @@ const stats = computed(() => {
       value: current.avg || 0,
       unit: 'USD',
       delta: undefined,
-      icon: Activity,
+      icon: Cog6ToothIcon,
     },
     {
       key: 'topCategory',
       label: 'Highest category',
       value: 0,
-      icon: TrendingUp,
+      icon: ArrowTrendingUpIcon,
       delta: undefined,
     },
   ];
