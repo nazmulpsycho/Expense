@@ -1,0 +1,52 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build output
+dist/
+build/
+*.tsbuildinfo
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Backend uploads
+backend/uploads/
+backend/tmp/
+
+# IDE
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Testing
+coverage/
+.nyc_output/
+
+# Misc
+*.map
+
+# Frontend generated scaffolding leftovers
+frontend/src/assets/hero.png
+frontend/src/assets/vite.svg
+frontend/src/assets/vue.svg
+frontend/src/components/HelloWorld.vue
+frontend/README.md
+frontend/.vscode/extensions.json
+frontend/public/icons.svg
