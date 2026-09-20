@@ -69,11 +69,26 @@
           <div class="grid grid-cols-2 gap-8 text-center sm:grid-cols-4">
             <div v-for="(stat, i) in stats" :key="i" class="stat-value text-3xl font-extrabold text-neon-blue">{{ stat.value }}</div>
           </div>
-          <div class="mt-6 flex flex-wrap justify-center gap-6 text-xs font-mono uppercase tracking-wider text-text-dim">
-            <span class="flex items-center gap-1.5"><span class="relative flex h-1.5 w-1.5"><span class="absolute inline-flex h-full w-full rounded-full bg-neon-blue opacity-75"></span></span> Auto category</span>
-            <span class="flex items-center gap-1.5"><span class="relative flex h-1.5 w-1.5"><span class="absolute inline-flex h-full w-full rounded-full bg-neon-purple opacity-75"></span> Live analytics</span>
-            <span class="flex items-center gap-1.5"><span class="relative flex h-1.5 w-1.5"><span class="absolute inline-flex h-full w-full rounded-full bg-neon-green opacity-75"></span> 30 categories</span>
-          </div>
+         <span class="flex items-center gap-1.5">
+  <span class="relative flex h-1.5 w-1.5">
+    <span class="absolute inline-flex h-full w-full rounded-full bg-neon-blue opacity-75"></span>
+  </span>
+  Auto category
+</span>
+
+<span class="flex items-center gap-1.5">
+  <span class="relative flex h-1.5 w-1.5">
+    <span class="absolute inline-flex h-full w-full rounded-full bg-neon-purple opacity-75"></span>
+  </span>
+  Live analytics
+</span>
+
+<span class="flex items-center gap-1.5">
+  <span class="relative flex h-1.5 w-1.5">
+    <span class="absolute inline-flex h-full w-full rounded-full bg-neon-green opacity-75"></span>
+  </span>
+  30 categories
+</span>
         </div>
 
         <!-- Footer CTA -->
